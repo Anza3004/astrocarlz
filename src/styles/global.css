@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de AstroCarlZ */
+  --color-marina: #1a1f3a;
+  --color-marina-dark: #0f1428;
+  --color-marina-light: #252b4d;
+  --color-dorado: #c9a961;
+  --color-dorado-light: #e0c98a;
+  --color-dorado-dark: #a68a4a;
+  --color-crema: #f5f0e6;
+  --color-crema-soft: #faf8f3;
+  --color-tinta: #e8e2d5;
+  --color-tinta-soft: #b8b2a5;
+
+  /* Fuentes */
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Radios */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-marina);
+    color: var(--color-crema);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .tracking-elegant {
+    letter-spacing: 0.15em;
+  }
+
+  .tracking-wide-elegant {
+    letter-spacing: 0.3em;
+  }
+}
