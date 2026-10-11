@@ -1,4 +1,4 @@
-# 🔮 AstroCarlZ
+# AstroCarlZ
 
 > Sitio web de Astrología y Numerología con más de 40 años de experiencia.
 
@@ -7,13 +7,13 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
 
-## 📖 Sobre el proyecto
+## Sobre el proyecto
 
 **AstroCarlZ** es un sitio web de presentación para servicios de astrología y numerología. El sitio comunica la propuesta de valor de más de 40 años de experiencia, presenta los servicios disponibles con precios y facilita el contacto directo por WhatsApp.
 
-**🌐 URL en vivo**: [astrocarlz.vercel.app](https://astrocarlz.vercel.app)
+** URL en vivo**: [astrocarlz.vercel.app](https://astrocarlz.vercel.app)
 
-## 🎯 Objetivo del sitio
+## Objetivo del sitio
 
 Dar visibilidad digital a los servicios de AstroCarlZ, complementando su presencia en redes sociales con un sitio propio que:
 
@@ -22,7 +22,7 @@ Dar visibilidad digital a los servicios de AstroCarlZ, complementando su presenc
 - **Facilita** el contacto por WhatsApp en un clic
 - **Genera** confianza con un diseño profesional y sobrio
 
-## 🛠️ Stack Tecnológico
+##  Stack Tecnológico
 
 | Capa | Tecnología | Por qué |
 |---|---|---|
@@ -32,7 +32,7 @@ Dar visibilidad digital a los servicios de AstroCarlZ, complementando su presenc
 | **Deploy** | Vercel | Deploy automático, HTTPS gratis, CDN global |
 | **Tipografías** | Cormorant Garamond + Inter | Elegancia serif + legibilidad sans |
 
-## 🚀 Empezar
+##  Empezar
 
 ### Requisitos previos
 
@@ -80,18 +80,18 @@ astrocarlz/
 ├── package.json
 └── tsconfig.json
 ```
-🗓️ Roadmap
+ Roadmap
 ```bash
 
 Sprint	Estado	Objetivo
-0	✅	Setup inicial (Astro, GitHub, Vercel)
-1	⏳	Landing completa con servicios
-2	📅	Formulario de contacto
-3	📅	Página "Sobre AstroCarlZ"
-4	📅	SEO y optimización
-5	📅	Testimonios (cuando estén disponibles)
+0		Setup inicial (Astro, GitHub, Vercel)
+1		Landing completa con servicios
+2		Formulario de contacto
+3		Página "Sobre AstroCarlZ"
+4		SEO y optimización
+5		Testimonios (cuando estén disponibles)
 ```
-🎨 Identidad visual
+ Identidad visual
 ```bash
 
 Elemento	Valor
@@ -103,7 +103,7 @@ Tipografía textos	Inter
 Estilo	Elegante, místico, premium
 ```
 
-💼 Servicios ofrecidos
+ Servicios ofrecidos
 
 
 | Servicio | Precio | Descripción |
@@ -117,22 +117,22 @@ Estilo	Elegante, místico, premium
 
 *Reserva con 50% de anticipo por transferencia.*
 
-📞 Contacto
+ Contacto
 WhatsApp: (686) 161 4063
 
 Facebook: AstroCarlZ
 
-📚 Documentación
-📓 Diario de desarrollo — Bitácora día a día
+ Documentación
+ Diario de desarrollo — Bitácora día a día
 
-💡 Casos de estudio — Problemas resueltos
+ Casos de estudio — Problemas resueltos
 
-🎯 Decisiones — Decisiones técnicas
+ Decisiones — Decisiones técnicas
 
-📄 Licencia
+ Licencia
 Todos los derechos reservados © 2026 AstroCarlZ
 
 <div align="center">
 Diseñado y desarrollado con 💜 en Mexicali, México
 
-</div> ```
+
