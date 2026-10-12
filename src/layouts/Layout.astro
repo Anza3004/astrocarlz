@@ -35,6 +35,49 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
 
+        {/* Schema.org LocalBusiness para SEO */}
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AstroCarlZ",
+        "alternateName": "Astro CarlZ",
+        "description": "Astrología y numerología con más de 40 años de experiencia. Cartas natales, numerología y consultas personalizadas.",
+        "url": "https://astrocarlz.vercel.app",
+        "telephone": "+526861614063",
+        "priceRange": "$400 - $1,800 MXN",
+        "areaServed": {
+          "@type": "Country",
+          "name": "México"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Mexicali",
+          "addressRegion": "Baja California",
+          "addressCountry": "MX"
+        },
+        "serviceType": [
+          "Carta natal",
+          "Numerología",
+          "Consulta astrológica",
+          "Lectura del cielo",
+          "Carta astral"
+        ],
+        "sameAs": [
+          "https://www.facebook.com/astroynumerologo"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "AstroCarlZ",
+          "jobTitle": "Astrólogo y Numerólogo",
+          "description": "Más de 40 años de experiencia interpretando el lenguaje de los astros."
+        },
+        "knowsLanguage": ["es"],
+        "slogan": "Lecturas personalizadas del cielo"
+      })}
+      />
+
     {/* Fuentes */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
