@@ -1,0 +1,101 @@
+---
+// Sección Proceso de AstroCarlZ
+const pasos = [
+  {
+    numero: "01",
+    titulo: "Elige tu servicio",
+    descripcion:
+      "Revisa las opciones y decide cuál se adapta mejor a lo que buscas.",
+  },
+  {
+    numero: "02",
+    titulo: "Reserva con anticipo",
+    descripcion:
+      "Aparta tu lugar con el 50% del total por transferencia bancaria.",
+  },
+  {
+    numero: "03",
+    titulo: "Recibe tu carta",
+    descripcion:
+      "Al liquidar el pago, Te enviamos tu carta natal completa por correo electrónico o el medio deseado en el tiempo acordado.",
+  },
+  {
+    numero: "04",
+    titulo: "Agenda tu sesión",
+    descripcion:
+      "Si elegiste un paquete con sesión, agendamos una videollamada para resolver tus dudas.",
+  },
+];
+---
+
+<section id="proceso" class="relative py-24 px-6">
+  <div class="max-w-5xl mx-auto">
+    {/* Encabezado */}
+    <div class="text-center mb-16">
+      <p class="font-sans text-xs tracking-wide-elegant text-dorado/80 uppercase mb-6">
+        Proceso
+      </p>
+
+      <h2 class="font-serif text-4xl md:text-5xl text-dorado tracking-elegant mb-6">
+        Cómo agendar tu lectura
+      </h2>
+
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-16 h-px bg-dorado/50"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-dorado"></div>
+        <div class="w-16 h-px bg-dorado/50"></div>
+      </div>
+
+      <p class="font-sans text-base text-crema/70 max-w-2xl mx-auto leading-relaxed">
+        Un proceso sencillo para recibir tu lectura personalizada.
+      </p>
+    </div>
+
+    {/* Pasos */}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {pasos.map((paso, index) => (
+        <div class="relative">
+          {/* Línea conectora (solo desktop) */}
+          {index < pasos.length - 1 && (
+            <div class="hidden lg:block absolute top-6 left-full w-full h-px bg-dorado/20 -translate-x-1/2"></div>
+          )}
+
+          {/* Contenido del paso */}
+          <div class="relative z-10">
+            {/* Círculo con número */}
+            <div class="w-12 h-12 rounded-full border border-dorado/40 flex items-center justify-center mb-6 bg-marina">
+              <span class="font-serif text-lg text-dorado">
+                {paso.numero}
+              </span>
+            </div>
+
+            {/* Título */}
+            <h3 class="font-serif text-xl text-dorado mb-3">
+              {paso.titulo}
+            </h3>
+
+            {/* Descripción */}
+            <p class="font-sans text-sm text-crema/60 leading-relaxed">
+              {paso.descripcion}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* CTA */}
+    <div class="text-center mt-16">
+      <p class="font-sans text-sm text-crema/60 italic mb-6">
+        ¿Listo para empezar? Escríbenos por WhatsApp.
+      </p>
+      <a
+        href="https://wa.me/526861614063?text=Hola%20AstroCarlZ%2C%20quiero%20agendar%20una%20consulta."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-8 py-4 bg-dorado text-marina font-sans text-sm tracking-wide-elegant uppercase font-medium hover:bg-dorado-light transition-colors duration-300"
+      >
+        Agendar por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
