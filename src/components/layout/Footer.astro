@@ -1,0 +1,92 @@
+---
+// Footer de AstroCarlZ
+const enlaces = [
+  { href: "#servicios", texto: "Servicios" },
+  { href: "#proceso", texto: "Proceso" },
+  { href: "#sobre", texto: "Sobre mí" },
+];
+
+const contacto = [
+  {
+    href: "https://wa.me/526861614063",
+    texto: "WhatsApp",
+    externo: true,
+  },
+  {
+    href: "https://www.facebook.com/astroynumerologo",
+    texto: "Facebook",
+    externo: true,
+  },
+];
+---
+
+<footer class="relative border-t border-dorado/10 bg-marina-dark">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    {/* Contenido principal */}
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-8 mb-12">
+      {/* Columna 1: Logo + descripción */}
+      <div class="md:col-span-5">
+        <a
+          href="/"
+          class="font-serif text-3xl text-dorado tracking-elegant hover:text-dorado-light transition-colors inline-block mb-4"
+        >
+          AstroCarlZ
+        </a>
+        <p class="font-sans text-sm text-crema/60 leading-relaxed max-w-xs">
+          Astrología y numerología con más de 40 años de experiencia interpretando
+          el lenguaje de los astros.
+        </p>
+      </div>
+
+      {/* Columna 2: Enlaces */}
+      <div class="md:col-span-3">
+        <h3 class="font-sans text-xs tracking-wide-elegant uppercase text-dorado/70 mb-5">
+          Explora
+        </h3>
+        <ul class="flex flex-col gap-3">
+          {enlaces.map((enlace) => (
+            <li>
+              <a
+                href={enlace.href}
+                class="font-sans text-sm text-crema/60 hover:text-dorado transition-colors"
+              >
+                {enlace.texto}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Columna 3: Contacto */}
+      <div class="md:col-span-4">
+        <h3 class="font-sans text-xs tracking-wide-elegant uppercase text-dorado/70 mb-5">
+          Contacto
+        </h3>
+        <ul class="flex flex-col gap-3">
+          {contacto.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                target={item.externo ? "_blank" : undefined}
+                rel={item.externo ? "noopener noreferrer" : undefined}
+                class="font-sans text-sm text-crema/60 hover:text-dorado transition-colors"
+              >
+                {item.texto}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+
+    {/* Línea inferior */}
+    <div class="flex flex-col md:flex-row justify-between items-center gap-3 pt-8 border-t border-dorado/10">
+      <span class="font-sans text-xs text-crema/40 tracking-wide">
+        © 2026 AstroCarlZ · Todos los derechos reservados
+      </span>
+      <span class="font-sans text-xs text-crema/40 tracking-wide">
+        Hecho en Mexicali, México
+      </span>
+    </div>
+  </div>
+</footer>
