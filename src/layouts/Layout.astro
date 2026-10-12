@@ -35,7 +35,7 @@ const {
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
 
-        {/* Schema.org LocalBusiness para SEO */}
+            {/* Schema.org LocalBusiness para SEO */}
     <script
       type="application/ld+json"
       set:html={JSON.stringify({
@@ -57,13 +57,60 @@ const {
           "addressRegion": "Baja California",
           "addressCountry": "MX"
         },
-        "serviceType": [
-          "Carta natal",
-          "Numerología",
-          "Consulta astrológica",
-          "Lectura del cielo",
-          "Carta astral"
-        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de AstroCarlZ",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Numerología Esencial",
+                "description": "Estudio numerológico personal: camino de vida, números de alma y personalidad."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Carta Esencial",
+                "description": "Carta natal escrita de 15 a 20 páginas: Sol, Luna, Ascendente, planetas, casas y aspectos principales."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consulta en vivo",
+                "description": "Sesión de 60 minutos, sin informe escrito."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Carta Completa",
+                "description": "Informe de 30+ páginas con nodos lunares, Quirón y análisis de aspectos a fondo."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Carta + Sesión",
+                "description": "Carta Completa y videollamada de 45 a 60 minutos para explicarla y resolver dudas."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Paquete Integral",
+                "description": "Carta Completa, tránsitos del año, sesión de 60 minutos y seguimiento a los 3 meses."
+              }
+            }
+          ]
+        },
         "sameAs": [
           "https://www.facebook.com/astroynumerologo"
         ],
@@ -76,7 +123,7 @@ const {
         "knowsLanguage": ["es"],
         "slogan": "Lecturas personalizadas del cielo"
       })}
-      />
+    />
 
     {/* Fuentes */}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
