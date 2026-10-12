@@ -1,0 +1,102 @@
+---
+// Sección Sobre AstroCarlZ
+const bio = [
+  "AstroCarlZ descubrió su pasión por la astrología hace más de 40 años, cuando un viejo libro sobre el zodiaco llegó a sus manos. Desde entonces, ha dedicado su vida a estudiar el movimiento de los astros y a interpretar cómo influyen en el camino de cada persona.",
+  "Su enfoque combina la sabiduría tradicional con una mirada contemporánea, ofreciendo lecturas profundas, claras y personalizadas. No se trata solo de predecir, sino de acompañar a cada persona a comprenderse mejor.",
+];
+
+const datos = [
+  { numero: "40+", texto: "años de experiencia" },
+  { numero: "+1,000", texto: "cartas entregadas" },
+  { numero: "100%", texto: "lecturas personalizadas" },
+];
+---
+
+<section id="sobre" class="relative py-24 px-6">
+  <div class="max-w-6xl mx-auto">
+    {/* Encabezado (solo en móvil) */}
+    <div class="text-center mb-12 lg:hidden">
+      <p class="font-sans text-xs tracking-wide-elegant text-dorado/80 uppercase mb-6">
+        Sobre AstroCarlZ
+      </p>
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <div class="w-16 h-px bg-dorado/50"></div>
+        <div class="w-1.5 h-1.5 rounded-full bg-dorado"></div>
+        <div class="w-16 h-px bg-dorado/50"></div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      {/* Columna izquierda: Foto/Placeholder */}
+      <div class="relative flex justify-center lg:justify-start">
+        {/* Círculos decorativos detrás */}
+        <div class="absolute top-1/2 left-1/2 lg:left-1/4 -translate-x-1/2 -translate-y-1/2 w-[380px] h-[380px] md:w-[420px] md:h-[420px] rounded-full border border-dorado/20 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 lg:left-1/4 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] md:w-[300px] md:h-[300px] rounded-full border border-dorado/30 pointer-events-none"></div>
+
+        {/* Placeholder del retrato */}
+        <div class="relative z-10 w-[260px] h-[340px] md:w-[300px] md:h-[400px] rounded-lg overflow-hidden bg-gradient-to-br from-marina-dark to-marina-light border border-dorado/30 flex items-center justify-center">
+          {/* Iniciales */}
+          <div class="text-center">
+            <div class="font-serif text-7xl md:text-8xl text-dorado tracking-elegant mb-4">
+              AC
+            </div>
+            <p class="font-sans text-xs tracking-wide-elegant text-dorado/60 uppercase">
+              Retrato próximamente
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Columna derecha: Texto */}
+      <div>
+        {/* Encabezado (solo en desktop) */}
+        <div class="hidden lg:block mb-8">
+          <p class="font-sans text-xs tracking-wide-elegant text-dorado/80 uppercase mb-4">
+            Sobre AstroCarlZ
+          </p>
+          <h2 class="font-serif text-4xl md:text-5xl text-dorado tracking-elegant mb-6">
+            Cuarenta años leyendo el cielo
+          </h2>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-16 h-px bg-dorado/50"></div>
+            <div class="w-1.5 h-1.5 rounded-full bg-dorado"></div>
+            <div class="w-16 h-px bg-dorado/50"></div>
+          </div>
+        </div>
+
+        {/* Bio */}
+        <div class="flex flex-col gap-5 mb-10">
+          {bio.map((parrafo) => (
+            <p class="font-sans text-base text-crema/70 leading-relaxed">
+              {parrafo}
+            </p>
+          ))}
+        </div>
+
+        {/* Frase destacada */}
+        <blockquote class="border-l-2 border-dorado/50 pl-6 py-2 mb-10">
+          <p class="font-serif italic text-xl md:text-2xl text-dorado/90 leading-relaxed">
+            "El cielo no dicta tu destino, te muestra el camino."
+          </p>
+          <footer class="font-sans text-xs tracking-wide-elegant text-crema/50 uppercase mt-3">
+            — AstroCarlZ
+          </footer>
+        </blockquote>
+
+        {/* Datos clave */}
+        <div class="grid grid-cols-3 gap-4 pt-8 border-t border-dorado/20">
+          {datos.map((dato) => (
+            <div class="text-center lg:text-left">
+              <div class="font-serif text-3xl md:text-4xl text-dorado mb-1">
+                {dato.numero}
+              </div>
+              <div class="font-sans text-xs tracking-wide text-crema/50 uppercase">
+                {dato.texto}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
